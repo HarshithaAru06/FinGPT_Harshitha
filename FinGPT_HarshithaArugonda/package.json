@@ -1,0 +1,25 @@
+{
+  "name": "fingpt",
+  "version": "1.0.0",
+  "description": "Financial Education and Tools Platform",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "finance",
+    "education",
+    "ai",
+    "tools"
+  ],
+  "author": "Harshitha Arugonda",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
